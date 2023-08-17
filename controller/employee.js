@@ -37,7 +37,7 @@ const Exp=async (req,res)=>{
 }
 
 const Graduate=async (req,res)=>{
-    const result=await employee.find({"yearGrad":{"$gt":"2015"}},{"overallExp":{"$gt":'1'}})
+    const result=await employee.find({"yearGrad":{"$gt":"2015"},"overallExp":{"$gt":'1'}})
     res.send(result)
 }
 
